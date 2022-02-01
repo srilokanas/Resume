@@ -22,6 +22,7 @@ li {
   display: grid;
   grid-template-columns: 300px 700px;
   min-height: 1000px;
+  width: 90%;
 }
 
 .left-section {
@@ -30,7 +31,6 @@ li {
 }
 .right-section {
   grid-column: span 1 / span 2;
-  width: 90%;
   background-color: rgba(127, 127, 0, 0.2);
 }
 

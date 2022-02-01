@@ -13,23 +13,184 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0);
+}
+a:hover {
+  opacity: 0.5;
+}
+li {
+  list-style-type: none;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 300px 700px;
+  min-height: 1000px;
+}
+
+.left-section {
+  grid-column: 1/2;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.right-section {
+  grid-column: 2/3;
+  width: 90%;
+  background-color: rgba(127, 127, 0, 0.2);
+}
+
+.profile-image {
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 30%;
+  width: 60%;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+}
+
+.designation {
+  font-size: 1 rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+.social-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+}
+
+.skill-name {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.progress-bar {
+  border: 1px solid white;
+  height: 4px;
+}
+.html,
+.css {
+  border: 1px solid white;
+  width: 50%;
+}
+
+.javascript,
+.java {
+  border: 1px solid white;
+  width: 35%;
+}
+.right-main-content {
+  padding: 2rem 3rem;
+}
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 674px) {
+  .main-content {
+    grid-template-columns: repeat(1, fr);
+  }
+}
+
+</style>
     </head>
     <body>
         <main class="main-content" contenteditable="true">
-            <section class="left-section">
-                 <div class="left-content">
-                    <!-- Write code for the left section here -->
-                </div>
-            </div>
-            </section>
+          <section class="left-section">
+              <div class="left-content">
+                  <div class="profile-details">
+                    <img class="profile-image" src="https://imgbox.com/y4yWfJ4q" />
+                    <p class="name">a s lokanadhan</p>
+                    <p class="designation">sde - 1</p>
+                    <p class="description">MERN Stack Developer | Full Stack Developer | Web Developer</p>
+                    <div class="contact-item">
+                        <ul>
+                            <div class="social-icon">
+                            <li class="icon"><a href="#" class="fa fa-linkedin"></a></li>
+                            <li class="icon"><a href="#" class="fa fa-github"></a></li>
+                            <li class="icon"><a href="#" class="fa fa-facebook"></a></li>
+                            <li class="icon"><a href="#" class="fa fa-twitter"></a></li>
+                            </div>
+                            <br/>
+                            <li class="icon"><a href="#" class="fa fa-envelope">  srilokanas@gmail.com</a></li><br/>
+                            <li class="icon"><a href="#" class="fa fa-mobile">  +91 8500551554</a></li><br/>
+                            <li class="icon"><a href="#" class="fa fa-map-marker">  Nagari, Andhra Pradesh</a></li>
+                        </ul>
+                        <br/>
+                        <div class="skill">
+                            <h2 class="skills">skills</h2>
+                            <div class="skills-item">
+                                <p class="skill-name">HTML</p>
+                                <div class="progress-bar">
+                                    <div class="html"></div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <p class="skill-name">CSS</p>
+                                <div class="progress-bar">
+                                    <div class="css"></div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <p class="skill-name">JavaScript</p>
+                                <div class="progress-bar">
+                                    <div class="javascript"></div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <p class="skill-name">Java</p>
+                                <div class="progress-bar">
+                                    <div class="java"></div>
+                                </div>
+                            </div>
 
-            <section class="right-section"> 
-                <div class="right-main-content">
+                        </div>
+                    </div>
                     
-                    <!-- Write code for the right section here -->
-                </div>
-            </section>
-        </main>
+                  </div>
+              </div>
+          </section>
+          <section class="right-section">
+              <div class="right-main-content">
+                  <h2 class="right-title">about me</h2>
+                <h2 class="right-title">education</h2>
+                <h2 class="right-title">experience</h2>
+                  </div>
+
+              </div>
+          </section>
+      </main>
     </body>
 </html> 

@@ -107,7 +107,7 @@ li {
   padding: 0.5rem;
   letter-spacing: 1px;
 }
-@media only screen and (min-width: 674px) {
+@media only screen and (max-width: 674px) {
   .main-content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
